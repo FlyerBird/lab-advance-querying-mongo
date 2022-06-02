@@ -35,7 +35,7 @@ db.companies.find({
 
 ### 6. All the companies that don't include the `partners` field.
 
-<!-- Your Code Goes Here -->
+db.companies.find({partners: {$exists: "false"}})
 
 ### 7. All the companies that have a null type of value on the `category_code` field.
 
